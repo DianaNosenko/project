@@ -1,0 +1,36 @@
+.wrapper {
+    width: 523px;
+    height: 226px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    margin: 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.headerArticle {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.textArticle {
+    margin-bottom: 25px;
+    color: gray;
+    font-size: 18px;
+
+}
+.buttonArticle a {
+    text-decoration: none;
+    border: 1px solid #377dff ;
+    border-radius: 5px;
+    padding: 15px;
+    
+}

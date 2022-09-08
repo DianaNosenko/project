@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import NamesWrapper from '../../components/NamesWrapper/NamesWrapper';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -38,12 +39,7 @@ const Home = (props) => {
                 <span>Find the Perfect Name for</span>
                 <span className={styleName}>{text}</span>
               </div>
-              <p>
-                Launch a naming contest to engage hundreds of naming
-                experts as you’re guided through our agency-level naming process.
-                Or, explore our hand-picked collection of premium names
-                available for immediate purchase
-              </p>
+              <NamesWrapper/>
               <div className={styles.button}>
                 <Link className={styles.button__link} to="/dashboard">DASHBOARD</Link>
               </div>
