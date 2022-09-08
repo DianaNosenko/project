@@ -44,6 +44,19 @@ const Home = (props) => {
                 <Link className={styles.button__link} to="/dashboard">DASHBOARD</Link>
               </div>
             </div>
+            <div className={styles.headerBar}>
+              <h3>Expert-Curated Premium Domains</h3>
+              <p className={styles.blueUnderline}>
+                Over 150,000+ ready to use brandable domains hand picked by our branding experts
+              </p>
+            </div>
+            <SlideBar
+              images={carouselConstants.premiumSliderImages}
+              carouselType={carouselConstants.PREMIUM_SLIDER}
+            />
+            <div className={styles.blueButton}>
+                <Link className={styles.blueButton__link} to="/dashboard">View All Names for Sale</Link>
+              </div>
             <div className={styles.greyContainer}>
               <SlideBar
                 images={carouselConstants.mainSliderImages}

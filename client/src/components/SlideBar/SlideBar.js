@@ -24,6 +24,8 @@ const SliderBar = (props) => {
         return style.exampleCarousel;
       case carouselConstants.FEEDBACK_SLIDER:
         return style.feedbackCarousel;
+     case carouselConstants.PREMIUM_SLIDER:
+      return style.mainCarousel;   
     }
   };
 
@@ -56,6 +58,16 @@ const SliderBar = (props) => {
             <p>{carouselConstants.FEEDBACK_SLIDER_TEXT[index].feedback}</p>
             <span>{carouselConstants.FEEDBACK_SLIDER_TEXT[index].name}</span>
           </div>
+        ));
+      }
+      case carouselConstants.PREMIUM_SLIDER: {
+        return Object.keys(props.images).map((key, index) => (
+          <img
+            src={props.images[key]}
+            alt="slide"
+            key={index}
+            className={style['carousel-cell']}
+          />
         ));
       }
     }
